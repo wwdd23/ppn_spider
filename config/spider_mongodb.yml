@@ -1,0 +1,11 @@
+development:
+  host: 127.0.0.1
+  port: 27017
+  database: vdayu_rakuten_spider
+  mafengwo_database: vdayu_mafengwo_spider
+
+production:
+  host: 127.0.0.1
+  port: 27017
+  database: vdayu_rakuten_spider
+  mafengwo_database: vdayu_mafengwo_spider

@@ -1,0 +1,47 @@
+{
+  results: [
+    {
+      task_id: 1
+      data:
+        hotel_name: 台北花园大酒店
+        address: '台北忠孝东路123号'
+    },
+    {
+      task_id: 1
+      data:
+        hotel_name: 台北花园大酒店
+        address: '台北忠孝东路123号'
+    },
+    {
+      task_id: 12
+      error:
+        code: 503 # 访问被拒绝
+    },
+    {
+      task_id: 12
+      error:
+        code: 500 # 脚本执行错误
+    }
+  ],
+  new_tasks: [
+    {
+      url: http://search.travel.rakuten.co.jp/ds/yado/hokkaido/p2
+      project: rakuten_hotels
+      category: normal
+      script_name: rakuten_hotel_list_parser
+      context: ''
+    },
+    {
+      url: http://travel.rakuten.co.jp/HOTEL/559/559.html
+      project: rakuten_hotels
+      category: normal
+      script_name: rakuten_hotel_basic_info_parser
+    },
+    {
+      url: http://travel.rakuten.co.jp/HOTEL/559/gallery.html
+      project: rakuten_hotels
+      category: normal
+      script_name: rakuten_hotel_image_urls_parser
+    }
+  ]
+}

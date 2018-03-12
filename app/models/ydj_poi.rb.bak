@@ -1,0 +1,51 @@
+class YdjPoi < ActiveRecord::Base
+
+
+
+  def self.init
+    $mongo_qspider['ydj_location.js'].find.each do |n|
+      data = n["data"]
+      data.each do |k,v|
+        v.each do |d|
+          YdjPoi.create(
+            {
+              :childseatSwitch => d["childseatSwitch"],
+              :dstStartTime => d["dstSwitch"],
+              :timezone => d["timezone"],
+              :neighbourTip => d["neighbourTip"],
+              :continentName => d["continentName"],
+              :areaCode => d["areaCode"],
+              :location => d["location"],
+              :dstSwitch => d["dstSwitch"],
+              :placeName => d["placeName"],
+              :cityCode => d["cityCode"],
+              :intownTip => d["intownTip"],
+              :placeCode => d["placeCode"],
+              :cityId => d["cityId"],
+              :isHotCity => d["isHotCity"],
+              :groups => d["groups"],
+              :cityInitial => d["cityInitial"],
+              :cityEnName => d["cityEnName"],
+              :enName => d["enName"],
+              :cityHotWeight => d["cityHotWeight"],
+              :citySpell => d["citySpell"],
+              :dstEndTime => d["dstEndTime"],
+              :cityLocation => d["cityLocation"],
+              :name => d["name"],
+              :cityName => d["cityName"],
+              :placeId => d["placeId"],
+              :hasPrice => d["hasPrice"],
+              :continentId => d["continentId"],
+           }
+         )
+        end
+      end
+    end
+
+  end
+
+
+
+
+
+end

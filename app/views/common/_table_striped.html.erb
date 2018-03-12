@@ -1,0 +1,15 @@
+<table class='table table-striped'>
+  <thead>
+    <% result.first.each do |n| %>
+      <th><%= n %></th>
+    <% end %>
+  </thead>
+
+  <% result.slice(1, result.count).each do |row| %>
+    <tr>
+      <% row.each do |n| %>
+        <td><%= n %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,24 @@
+<small>最近一小时完成的任务数：<%= @task_state[:recent_tasks_count] %>；</small>
+<small>最近一小时没有重试完成的任务数：<%= @task_state[:no_retry_tasks_count] %>；</small>
+<small>最近一小时重试超过一次的任务数：<%= @task_state[:retry_tasks_count] %>；</small>
+<small>平均每小时完成任务数：<%= @task_state[:avg_tasks_count] %>；</small>
+<p>
+<small>总共代理数：<%= Proxy.count %>；</small>
+<small>有效代理数：<%= Proxy.use_valid.count %>；</small>
+
+<% @tasks_content.each do |day, content| %>
+  <h4><%= day %></h4>
+  <%= render 'common/table_striped', result: content %>
+<% end %>
+
+<br>
+
+<h4>任务请求/返回时间</h4>
+<%= render 'common/table_striped', result: @monitor %>
+
+<h4>MongoDB stats</h4>
+<small>
+  <% @mongodb_stats.each do |n| %>
+    <span><%= get_mongodb_stats(n) %></span>&nbsp&nbsp&nbsp&nbsp&nbsp
+  <% end %>
+</small>

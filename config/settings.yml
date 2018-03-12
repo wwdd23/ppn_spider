@@ -1,0 +1,8 @@
+#fishtrip_fast_online_api: 'http://alpha.fishtrip.cn/fast_online_api'
+#fishtrip_fast_online_api_key: 'ejl7k573903858j9'
+#fishtrip_order_info_api_key: 'ecb70573ee3a5809'
+
+queue:
+  tasks: 'task_process'
+  image: 'image_process'
+  order: 'order_process'

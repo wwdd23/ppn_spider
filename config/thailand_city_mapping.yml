@@ -1,0 +1,102 @@
+---
+  cities:
+    - 
+      yu_id: 1262
+      ch_name: 帕岸岛
+      english_name: 'Koh Phangan'
+    -
+      yu_id: 1263
+      ch_name: 涛岛
+      english_name: 'Koh Tao'
+    -
+      yu_id: 1264
+      ch_name: 攀牙府
+      english_name: 'Phang-Nga'
+    -
+      yu_id: 1265
+      ch_name: 蔻立
+      english_name: 'Khao Lak'
+    -
+      yu_id: 1266 
+      ch_name: 兰塔岛
+      english_name: 'Koh Lanta'
+    -
+      yu_id: 1267 
+      ch_name: 春武里府
+      english_name: 'Chonburi'
+    -
+      yu_id: 1268 
+      ch_name: 罗勇府
+      english_name: 'Rayong, Koh Samet'
+    -
+      yu_id: 1269
+      ch_name: 春蓬府
+      english_name: 'Chumphon'
+    -
+      yu_id: 1270
+      ch_name: 东北地区
+      english_name: 'North-East (Isan)'
+    -
+      yu_id: 1271
+      ch_name: 中北地区
+      english_name: 'North-Central'
+    -
+      yu_id: 1272
+      ch_name: 南部地区
+      english_name: 'south'
+    -
+      yu_id: 633
+      ch_name: 北碧府
+      english_name: 'Kanchanaburi'
+    -
+      yu_id: 628
+      ch_name: 素可泰
+      english_name: 'Sukhothai'
+    -
+      yu_id: 46
+      ch_name: 苏梅岛
+      english_name: 'Koh Samui'
+    -
+      yu_id: 47
+      ch_name: 华欣
+      english_name: 'Hua Hin'
+    -
+      yu_id: 630
+      ch_name: 拜县
+      english_name: 'Pai'
+    -
+      yu_id: 626
+      ch_name: 大城
+      english_name: 'Ayutthaya'
+    -
+      yu_id: 36
+      ch_name: 芭堤雅
+      english_name: 'Pattaya'
+    -
+      yu_id: 35
+      ch_name: 清莱
+      english_name: 'Chiang Rai'
+    -
+      yu_id: 44
+      ch_name: 普吉岛
+      english_name: 'Phuket'
+    -
+      yu_id: 45
+      ch_name: 皮皮岛
+      english_name: 'Koh Phi Phi'
+    -
+      yu_id: 629
+      ch_name: 昌岛
+      english_name: 'Koh Chang'
+    -
+      yu_id: 72
+      ch_name: 甲米
+      english_name: 'Krabi'
+    -
+      yu_id: 34
+      ch_name: 清迈
+      english_name: 'Chiang Mai'
+    -
+      yu_id: 4
+      ch_name: 曼谷
+      english_name: 'Bangkok'

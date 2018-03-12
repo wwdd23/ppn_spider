@@ -1,0 +1,10 @@
+部署流程:
+
+
+* 预编译css
+
+    RAILS_ENV=production rake assets:precompile
+
+* 启动 delayed_job
+
+* 启动服务 unicorn

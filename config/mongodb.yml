@@ -1,0 +1,11 @@
+development:
+  host: 127.0.0.1
+  port: 27017
+  database: qspider-dev
+  proxy_database: proxy
+  analysis_database:  qwb_development
+
+production:
+  host: 10.10.10.1
+  port: 27027
+  database: qspider-production
