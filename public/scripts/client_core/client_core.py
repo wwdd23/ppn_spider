@@ -20,7 +20,7 @@ DEEP_SLEEP_TIME = 60 * 2
 #root_url = 'http://spider.fishtrip.cn'
 #root_url = 'http://lvh.me:3000'
 #root_url = 'http://localhost:3000'
-root_url = 'http://localhost:8083'
+root_url = 'http://localhost:8082'
 
 task_url = "%s/api/v1/tasks" % root_url
 results_url = "%s/api/v1/results" % root_url
