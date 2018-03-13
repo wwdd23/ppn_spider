@@ -1,7 +1,7 @@
 development:
   host: 127.0.0.1
   port: 27017
-  database: ppnspider-dev
+  database: ppn-spider-dev
   #proxy_database: proxy
   #analysis_database:  ppn_development
 

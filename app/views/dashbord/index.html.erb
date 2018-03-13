@@ -14,11 +14,13 @@
 <br>
 
 <h4>任务请求/返回时间</h4>
-<%= render 'common/table_striped', result: @monitor %>
+<%#= render 'common/table_striped', result: @monitor %>
 
 <h4>MongoDB stats</h4>
+<!--
 <small>
-  <% @mongodb_stats.each do |n| %>
-    <span><%= get_mongodb_stats(n) %></span>&nbsp&nbsp&nbsp&nbsp&nbsp
-  <% end %>
+  <%# @mongodb_stats.each do |n| %>
+    <span><%#= get_mongodb_stats(n) %></span>&nbsp&nbsp&nbsp&nbsp&nbsp
+  <%# end %>
 </small>
+-->

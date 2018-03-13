@@ -23,15 +23,15 @@ class DashbordController < AuthController
       end
     end
 
-    @monitor = [['host', 'request', 'response', 'running time (min)']]
-    @monitor += $mongo_qspider_monitor.find().map do |client|
-      [
-        "#{Resolv.getname(client['ip']) rescue client['ip']}",
-        client['req_at'].try(:to_time).try(:strftime, "%F %T"),
-        client['ret_at'].try(:to_time).try(:strftime, "%F %T"),
-        ((client['running_time'] || 0).to_f / 60).round(1),
-      ]
-    end.compact.sort{|n1, n2| Time.parse(n1[2] || Time.at(0).to_s) <=> Time.parse(n2[2] || Time.at(0).to_s)}
+    #@monitor = [['host', 'request', 'response', 'running time (min)']]
+    #@monitor += $mongo_qspider_monitor.find().map do |client|
+    #  [
+    #    "#{Resolv.getname(client['ip']) rescue client['ip']}",
+    #    client['req_at'].try(:to_time).try(:strftime, "%F %T"),
+    #    client['ret_at'].try(:to_time).try(:strftime, "%F %T"),
+    #    ((client['running_time'] || 0).to_f / 60).round(1),
+    #  ]
+    #end.compact.sort{|n1, n2| Time.parse(n1[2] || Time.at(0).to_s) <=> Time.parse(n2[2] || Time.at(0).to_s)}
 
     tasks = Task.where(:updated_at => 1.hours.ago..Time.now)
     @task_state = {
@@ -41,7 +41,7 @@ class DashbordController < AuthController
       :no_retry_tasks_count => tasks.success.where(:attempts => 0).count,
     }
 
-    @mongodb_stats = get_mongodb_stats.map{|n| n['new_ns_name'] = n['ns'].gsub("#{MONGO_CONFIG['database']}.", ''); n}.sort{|n1, n2| n2['size'] <=> n1['size']}
+    #@mongodb_stats = get_mongodb_stats.map{|n| n['new_ns_name'] = n['ns'].gsub("#{MONGO_CONFIG['database']}.", ''); n}.sort{|n1, n2| n2['size'] <=> n1['size']}
   end
 
   private
