@@ -1,7 +1,7 @@
 # source 'https://rubygems.org'
 source 'https://ruby.taobao.org'
 
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.7.1'
 gem 'mysql2', '~> 0.3.16'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -9,6 +9,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
+gem 'json'
 
 #xml parse
 gem 'nokogiri'
@@ -23,6 +24,7 @@ gem 'unicorn'
 # api
 gem 'grape'
 gem 'grape-swagger'
+gem 'grape-swagger-rails'
 gem 'kramdown'
 gem 'actionpack'
 
@@ -64,7 +66,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.3.4'
 
 # settings
-gem "rails_config"
+#gem "rails_config"
+gem 'config', github: 'railsconfig/config'
 
 gem 'whenever'
 gem 'rubyzip'

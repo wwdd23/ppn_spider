@@ -40,18 +40,23 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   #
-  
-  if ENV['SEND_MAIL_PROVIDER'].eql?('mailgun')
-    config.action_mailer.delivery_method = :mailgun
-    config.action_mailer.mailgun_settings = {
-      api_key: "key-37741c2a664f0f0e6a5d78e341975444",
-      domain: "mg.zhouhuan.top",
-    }
-  else
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address: "localhost",
       port: "1025",
     }
-  end
+  
+#  if ENV['SEND_MAIL_PROVIDER'].eql?('mailgun')
+#    config.action_mailer.delivery_method = :mailgun
+#    config.action_mailer.mailgun_settings = {
+#      api_key: "key-37741c2a664f0f0e6a5d78e341975444",
+#      domain: "mg.zhouhuan.top",
+#    }
+#  else
+#    config.action_mailer.delivery_method = :smtp
+#    config.action_mailer.smtp_settings = {
+#      address: "localhost",
+#      port: "1025",
+#    }
+#  end
 end

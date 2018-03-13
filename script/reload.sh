@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PID=`cat /var/run/dayu-spider-unicorn.pid`
+PID=`cat /var/run/ppn-spider-unicorn.pid`
 
 # kill -USR2
 kill -USR2 $PID
